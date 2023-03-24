@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    display: grid;
+    place-items: center;
+    background-color: #101010;
+}
+
+@media screen and (max-width:400px) {
+    body {
+        height: 100%;
+    }
+}
+
+.qrCard {
+    width: 300px;
+    background-color: #282828;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.qrCard .titles {
+    margin-bottom: 20px;
+}
+
+.qrCard form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.qrCard input {
+    padding: 10px;
+    background-color: #717274;
+    border: 0;
+    margin: 10px 0;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.qrCard form button {
+    background-color: #FF3E59;
+    border: 0;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.qrCard form button:focus,
+.qrCard form button:hover {
+    background-color: #101010;
+}
+
+.qrCode .printBtn {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.qrCode .printBtn:hover {
+    background-color: #101010;
+}
+
+#qrhere {
+    margin: 20px 0;
+}
+
+#qrhere img {
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    margin-top: 10px;
+}
+
+p,
+a {
+    font-size: 14px;
+    color: white;
+}
+
+.display {
+    display: none;
+}
+
+@media print {
+    .qrCode .printBtn {
+        display: none;
+    }
+
+    .qrCard form {
+        display: none;
+    }
+
+    .qrCard p {
+        display: none;
+    }
+}

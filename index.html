@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free QR Code Generator Online | QRCodeCraft</title>
+    <meta name="description"
+        content="Generate custom QR codes for free with QRCodeCraft. Our easy-to-use online tool lets you create QR codes for URLs, text, email, phone numbers, and more. Our tool is easy to use and produces codes that are clear, scannable, and optimized for mobile devices." />
+    <meta name="keywords"
+        content="QR code, QR code generator, custom QR code, free QR code generator, online QR code generator, QRCodeCraft">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="qrCard">
+        <div class="titles">
+            <h1>QRCodeCraft</h1>
+        </div>
+        <form>
+            <input type="text" id="linkHere">
+            <button type="button" onclick="generateCode()">Generate</button>
+        </form>
+        <div class="qrCode">
+            <button class="printBtn" onclick="printBtn()">🖨️ Print </button>
+            <div id="qrhere"></div>
+        </div>
+        <p>Created by : <a href="https://github.com/Xaib026">Shoaib Hussain</a></p>
+    </div>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="js/script.js"></script>
